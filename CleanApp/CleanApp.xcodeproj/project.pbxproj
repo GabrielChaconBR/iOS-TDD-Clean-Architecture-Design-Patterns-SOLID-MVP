@@ -10,6 +10,8 @@
 		C032CBC02626284C00CA334D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C032CBBF2626284C00CA334D /* Model.swift */; };
 		C032CBC6262628FF00CA334D /* RemoteAddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = C032CBC5262628FF00CA334D /* RemoteAddAccount.swift */; };
 		C032CBCA2626293000CA334D /* HttpPostClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C032CBC92626293000CA334D /* HttpPostClient.swift */; };
+		C032CBD92626388700CA334D /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C032CBD82626388700CA334D /* DomainError.swift */; };
+		C032CBE126263A8800CA334D /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C032CBE026263A8800CA334D /* HttpError.swift */; };
 		C07EA4082625E55F009697D9 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EA4072625E55F009697D9 /* AddAccount.swift */; };
 		C07EA40C2625E659009697D9 /* AddAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EA40B2625E659009697D9 /* AddAccountModel.swift */; };
 		C07EA4102625E679009697D9 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EA40F2625E679009697D9 /* AccountModel.swift */; };
@@ -54,6 +56,8 @@
 		C032CBBF2626284C00CA334D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		C032CBC5262628FF00CA334D /* RemoteAddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccount.swift; sourceTree = "<group>"; };
 		C032CBC92626293000CA334D /* HttpPostClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpPostClient.swift; sourceTree = "<group>"; };
+		C032CBD82626388700CA334D /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
+		C032CBE026263A8800CA334D /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
 		C07EA3FD2625E424009697D9 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07EA4002625E424009697D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C07EA4072625E55F009697D9 /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				C032CBC92626293000CA334D /* HttpPostClient.swift */,
+				C032CBE026263A8800CA334D /* HttpError.swift */,
 			);
 			path = Http;
 			sourceTree = "<group>";
@@ -123,6 +128,14 @@
 				C07EA4242625E6E3009697D9 /* RemoteAddAccountTests.swift */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		C032CBD72626387900CA334D /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				C032CBD82626388700CA334D /* DomainError.swift */,
+			);
+			path = Errors;
 			sourceTree = "<group>";
 		};
 		C050407D2624EAAF001219D8 = {
@@ -151,6 +164,7 @@
 			children = (
 				C032CBCF2626298D00CA334D /* UseCases */,
 				C07EA40A2625E63D009697D9 /* Model */,
+				C032CBD72626387900CA334D /* Errors */,
 				C07EA4002625E424009697D9 /* Info.plist */,
 			);
 			path = Domain;
@@ -339,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C032CBD92626388700CA334D /* DomainError.swift in Sources */,
 				C07EA4082625E55F009697D9 /* AddAccount.swift in Sources */,
 				C07EA4102625E679009697D9 /* AccountModel.swift in Sources */,
 				C07EA40C2625E659009697D9 /* AddAccountModel.swift in Sources */,
@@ -351,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C032CBCA2626293000CA334D /* HttpPostClient.swift in Sources */,
+				C032CBE126263A8800CA334D /* HttpError.swift in Sources */,
 				C032CBC6262628FF00CA334D /* RemoteAddAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
