@@ -93,6 +93,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C032CBCF2626298D00CA334D /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				C07EA4072625E55F009697D9 /* AddAccount.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		C032CBD0262629AC00CA334D /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				C032CBC5262628FF00CA334D /* RemoteAddAccount.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		C032CBD1262629BA00CA334D /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				C032CBC92626293000CA334D /* HttpPostClient.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		C032CBD2262629D200CA334D /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				C07EA4242625E6E3009697D9 /* RemoteAddAccountTests.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
 		C050407D2624EAAF001219D8 = {
 			isa = PBXGroup;
 			children = (
@@ -117,8 +149,8 @@
 		C07EA3FE2625E424009697D9 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				C032CBCF2626298D00CA334D /* UseCases */,
 				C07EA40A2625E63D009697D9 /* Model */,
-				C07EA4072625E55F009697D9 /* AddAccount.swift */,
 				C07EA4002625E424009697D9 /* Info.plist */,
 			);
 			path = Domain;
@@ -137,8 +169,8 @@
 		C07EA4182625E6E3009697D9 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				C032CBC5262628FF00CA334D /* RemoteAddAccount.swift */,
-				C032CBC92626293000CA334D /* HttpPostClient.swift */,
+				C032CBD1262629BA00CA334D /* Http */,
+				C032CBD0262629AC00CA334D /* UseCases */,
 				C07EA41A2625E6E3009697D9 /* Info.plist */,
 			);
 			path = Data;
@@ -147,7 +179,7 @@
 		C07EA4232625E6E3009697D9 /* DataTests */ = {
 			isa = PBXGroup;
 			children = (
-				C07EA4242625E6E3009697D9 /* RemoteAddAccountTests.swift */,
+				C032CBD2262629D200CA334D /* UseCases */,
 				C07EA4262625E6E3009697D9 /* Info.plist */,
 			);
 			path = DataTests;
