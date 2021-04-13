@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C032CBC02626284C00CA334D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C032CBBF2626284C00CA334D /* Model.swift */; };
+		C032CBC6262628FF00CA334D /* RemoteAddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = C032CBC5262628FF00CA334D /* RemoteAddAccount.swift */; };
+		C032CBCA2626293000CA334D /* HttpPostClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C032CBC92626293000CA334D /* HttpPostClient.swift */; };
 		C07EA4082625E55F009697D9 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EA4072625E55F009697D9 /* AddAccount.swift */; };
 		C07EA40C2625E659009697D9 /* AddAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EA40B2625E659009697D9 /* AddAccountModel.swift */; };
 		C07EA4102625E679009697D9 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EA40F2625E679009697D9 /* AccountModel.swift */; };
@@ -50,6 +52,8 @@
 
 /* Begin PBXFileReference section */
 		C032CBBF2626284C00CA334D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C032CBC5262628FF00CA334D /* RemoteAddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccount.swift; sourceTree = "<group>"; };
+		C032CBC92626293000CA334D /* HttpPostClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpPostClient.swift; sourceTree = "<group>"; };
 		C07EA3FD2625E424009697D9 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07EA4002625E424009697D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C07EA4072625E55F009697D9 /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 		C07EA4182625E6E3009697D9 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C032CBC5262628FF00CA334D /* RemoteAddAccount.swift */,
+				C032CBC92626293000CA334D /* HttpPostClient.swift */,
 				C07EA41A2625E6E3009697D9 /* Info.plist */,
 			);
 			path = Data;
@@ -245,6 +251,7 @@
 					};
 					C07EA4162625E6E3009697D9 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					C07EA41E2625E6E3009697D9 = {
 						CreatedOnToolsVersion = 12.2;
@@ -311,6 +318,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C032CBCA2626293000CA334D /* HttpPostClient.swift in Sources */,
+				C032CBC6262628FF00CA334D /* RemoteAddAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +523,7 @@
 		C07EA4292625E6E3009697D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = XWP37532SX;
@@ -530,6 +540,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.chacon.gabriel.Data;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -538,6 +549,7 @@
 		C07EA42A2625E6E3009697D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = XWP37532SX;
@@ -562,6 +574,7 @@
 		C07EA42C2625E6E3009697D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XWP37532SX;
 				INFOPLIST_FILE = DataTests/Info.plist;
@@ -580,6 +593,7 @@
 		C07EA42D2625E6E3009697D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XWP37532SX;
 				INFOPLIST_FILE = DataTests/Info.plist;
