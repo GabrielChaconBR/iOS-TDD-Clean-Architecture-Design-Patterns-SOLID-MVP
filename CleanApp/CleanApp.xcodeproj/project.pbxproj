@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C032CBC02626284C00CA334D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C032CBBF2626284C00CA334D /* Model.swift */; };
 		C07EA4082625E55F009697D9 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EA4072625E55F009697D9 /* AddAccount.swift */; };
 		C07EA40C2625E659009697D9 /* AddAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EA40B2625E659009697D9 /* AddAccountModel.swift */; };
 		C07EA4102625E679009697D9 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EA40F2625E679009697D9 /* AccountModel.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C032CBBF2626284C00CA334D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		C07EA3FD2625E424009697D9 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07EA4002625E424009697D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C07EA4072625E55F009697D9 /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -112,8 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				C07EA40A2625E63D009697D9 /* Model */,
-				C07EA4002625E424009697D9 /* Info.plist */,
 				C07EA4072625E55F009697D9 /* AddAccount.swift */,
+				C07EA4002625E424009697D9 /* Info.plist */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -123,6 +125,7 @@
 			children = (
 				C07EA40B2625E659009697D9 /* AddAccountModel.swift */,
 				C07EA40F2625E679009697D9 /* AccountModel.swift */,
+				C032CBBF2626284C00CA334D /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				C07EA4082625E55F009697D9 /* AddAccount.swift in Sources */,
 				C07EA4102625E679009697D9 /* AccountModel.swift in Sources */,
 				C07EA40C2625E659009697D9 /* AddAccountModel.swift in Sources */,
+				C032CBC02626284C00CA334D /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
