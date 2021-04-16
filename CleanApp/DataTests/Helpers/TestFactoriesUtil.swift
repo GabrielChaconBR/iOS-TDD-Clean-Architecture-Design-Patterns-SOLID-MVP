@@ -14,3 +14,8 @@ func makeUrl() -> URL {
     
     return URL(string: "http://any-url.com")!
 }
+
+func makeError() -> Error {
+    
+    return NSError(domain: "any_error", code: 0)
+}
