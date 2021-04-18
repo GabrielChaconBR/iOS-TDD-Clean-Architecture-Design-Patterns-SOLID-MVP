@@ -24,6 +24,7 @@
 		C0403A422627814D00FE6B6B /* XCTestCase+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04039FD26275E6F00FE6B6B /* XCTestCase+Extension.swift */; };
 		C0403A462627815500FE6B6B /* TestFactoriesUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0403A0326275EEB00FE6B6B /* TestFactoriesUtil.swift */; };
 		C0403A4C2627823B00FE6B6B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C0403A4B2627823B00FE6B6B /* Alamofire */; };
+		C063A3EE262CD05C00BEE2AE /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C063A3ED262CD05C00BEE2AE /* AlamofireAdapter.swift */; };
 		C07EA4082625E55F009697D9 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EA4072625E55F009697D9 /* AddAccount.swift */; };
 		C07EA40C2625E659009697D9 /* AddAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EA40B2625E659009697D9 /* AddAccountModel.swift */; };
 		C07EA4102625E679009697D9 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07EA40F2625E679009697D9 /* AccountModel.swift */; };
@@ -105,6 +106,7 @@
 		C0403A1F262765B300FE6B6B /* InfraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0403A24262765B300FE6B6B /* AlamofireAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapterTests.swift; sourceTree = "<group>"; };
 		C0403A26262765B300FE6B6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C063A3ED262CD05C00BEE2AE /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		C07EA3FD2625E424009697D9 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07EA4002625E424009697D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C07EA4072625E55F009697D9 /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 		C0403A18262765B300FE6B6B /* Infra */ = {
 			isa = PBXGroup;
 			children = (
+				C063A3F2262CD0B600BEE2AE /* Http */,
 				C0403A1A262765B300FE6B6B /* Info.plist */,
 			);
 			path = Infra;
@@ -268,6 +271,14 @@
 				C0403A1F262765B300FE6B6B /* InfraTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C063A3F2262CD0B600BEE2AE /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				C063A3ED262CD05C00BEE2AE /* AlamofireAdapter.swift */,
+			);
+			path = Http;
 			sourceTree = "<group>";
 		};
 		C07EA3FE2625E424009697D9 /* Domain */ = {
@@ -455,6 +466,7 @@
 				TargetAttributes = {
 					C0403A16262765B300FE6B6B = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					C0403A1E262765B300FE6B6B = {
 						CreatedOnToolsVersion = 12.2;
@@ -540,6 +552,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C063A3EE262CD05C00BEE2AE /* AlamofireAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +630,7 @@
 		C0403A29262765B300FE6B6B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = XWP37532SX;
@@ -633,6 +647,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.chacon.gabriel.Infra;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -641,6 +656,7 @@
 		C0403A2A262765B300FE6B6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = XWP37532SX;
@@ -665,6 +681,7 @@
 		C0403A2C262765B300FE6B6B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XWP37532SX;
 				INFOPLIST_FILE = InfraTests/Info.plist;
@@ -683,6 +700,7 @@
 		C0403A2D262765B300FE6B6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XWP37532SX;
 				INFOPLIST_FILE = InfraTests/Info.plist;
