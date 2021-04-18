@@ -8,6 +8,7 @@ public final class AlamofireAdapter: HttpPostClient {
     
     public init(session: Session = .default) {
         self.session = session
+        
     }
     
     public func post(to url: URL, with data: Data?, completion: @escaping (Result<Data?, HttpError>) -> Void) {
