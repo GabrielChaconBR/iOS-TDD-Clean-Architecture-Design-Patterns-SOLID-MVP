@@ -3,10 +3,66 @@
 <plist version="1.0">
 <dict>
 	<key>SchemeUserState</key>
-	<dict/>
+	<dict>
+		<key>CI.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Data.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>Domain.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Infra.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>UseCasesIntegrationTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>C0403A16262765B300FE6B6B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C0403A1E262765B300FE6B6B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C05040862624EAAF001219D8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C063A402262CE7B000BEE2AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C07EA3FC2625E424009697D9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C07EA4162625E6E3009697D9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C07EA41E2625E6E3009697D9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
